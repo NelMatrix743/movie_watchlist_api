@@ -8,13 +8,12 @@
 const express = require("express");
 const { print } = require("./utils");
 
+const app = express();
+const PORT = 7000;
 
 // --- API Endpoints ---
 
 
-
-const app = express();
-const PORT = 7000;
 
 app.listen(PORT, () => {
     print(`Server started!\nSystem running on PORT: ${PORT}`);
