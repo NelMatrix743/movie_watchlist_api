@@ -7,11 +7,6 @@
 
 
 // shortern console.log
-function print(msg){
+export function print(msg){
     console.log(msg);
 }
-
-
-module.exports = {
-    print
-};

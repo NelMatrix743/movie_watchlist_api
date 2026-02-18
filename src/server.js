@@ -5,14 +5,15 @@
  *  REPOSITORY: https://github.com/NelMatrix743/movie_watchlist_api.git
  */
 
-const express = require("express");
-const { print } = require("./utils");
+import { print } from "./utils.js";
+import express from "express";
+import movieRoutes from "./routes/movieRoutes.js";
 
 const app = express();
 const PORT = 7000;
 
-// --- API Endpoints ---
-
+// --- API Routes ---
+app.use("/movies", movieRoutes);
 
 
 app.listen(PORT, () => {
