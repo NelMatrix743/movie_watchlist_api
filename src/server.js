@@ -5,3 +5,19 @@
  *  REPOSITORY: https://github.com/NelMatrix743/movie_watchlist_api.git
  */
 
+const express = require("express");
+const { print } = require("./utils");
+
+
+// --- API Endpoints ---
+
+
+
+const app = express();
+const PORT = 7000;
+
+app.listen(PORT, () => {
+    print(`Server started!\nSystem running on PORT: ${PORT}`);
+});
+
+// eosc
